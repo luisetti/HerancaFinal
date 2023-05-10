@@ -4,7 +4,7 @@ public class Empregado {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
+    } 
     public String getNome() {
         return nome;
     }
@@ -16,15 +16,8 @@ public class Empregado {
         return salario;
     }
 
-    public Empregado(String nome, float salario){
-        this.nome = nome;
-        this.salario=salario;
-    }
-
-    public Empregado(){
-
-    }
+    @Override
     public String toString(){
-        return "O nome do empregado é: " + (nome+getNome());
+        return "O nome do empregado é: " + (nome+getNome()) + "com o salario de: " + (salario+getSalario());
     }
 }
